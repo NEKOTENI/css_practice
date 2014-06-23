@@ -1,0 +1,176 @@
+/* ここにcssを書いてみましょう */
+div, aside, footer {
+	border-radius: 20px;
+}
+
+#wrap {/*全体の幅とかを決めとく*/
+	width: 1000px;
+	margin-top: 20px auto;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#header {
+	width: 97.5%;
+	margin-top: 20px;
+	background-color: white;
+	margin-bottom: 10px;
+ 	/* box-shadow */
+	box-shadow:rgba(113, 135, 164, 0.65098) 0px 0px 6px 3px;
+	-webkit-box-shadow:rgba(113, 135, 164, 0.65098) 0px 0px 6px 3px;
+	-moz-box-shadow:rgba(113, 135, 164, 0.65098) 0px 0px 6px 3px;
+
+}
+
+#header h1 {/*丸文字でかわいく*/
+	text-align: left;
+	font-size: 300%;
+	font-family:  "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+	font-weight: bold;
+	color: Hotpink;
+	text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;;
+	height: 400px;
+	background-color: glay;
+	background-image: url(cat.jpg);/*どやぁ！と言わんばかりの肉球。画像の編集ができるようになったらもうちょっと横長にしたい*/
+	background-size: 100%;
+
+}
+
+#header nav#global {
+	margin-top: 0px;/*navi globalの上が大きく開いてる。くっつけたいんだけどな・・・*/
+
+}
+
+#header nav#global ul {
+ 	float: left;
+}
+
+#header nav#global ul li {
+	display: inline;
+
+}
+
+#header nav#global ul li a {
+ 	float: left;
+ 	padding: 0px 25px;
+ 	line-height: 50px;
+ 	font-size: 100%;
+ 	font-weight: bold;
+ 	text-decoration: none;
+ 	color: darkred;
+ 	text-shadow: HotPink 0 0 3px;
+ 	border: Hotpink solid 10px;
+ 	border-radius: 20px;
+ 
+}
+
+#header nav#global ul li a:nth-child(1) {/*左側だけバーなくす*/
+	border-left: white solid 10px;
+}
+
+
+#about {
+	margin-top: 20px;
+}
+
+#about ol li {
+	float: left;
+	display: inline;
+	height: 300px;
+	width: 300px;
+	background-color: MistyRose;
+	border-radius: 100px 25px 50px 50px;
+	background: #fcecfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 56%, #fd89d7 70%, #ff7cd8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(56%,#fba6e1), color-stop(70%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 56%,#fd89d7 70%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 56%,#fd89d7 70%,#ff7cd8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 56%,#fd89d7 70%,#ff7cd8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 56%,#fd89d7 70%,#ff7cd8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+
+}
+#about ol li:nth-child(2) {/*真ん中のボックスだけ左右にmarginつける*/
+  margin: 0 20px;
+}
+
+#body {
+	clear: both;
+}
+
+#main {
+	float: left;
+}
+
+#main .breadcrumbs ol li {
+	display: inline;
+	width: 97.5%;
+	margin-top: 20px;
+	background-color: ;
+	margin-bottom: 10px;
+}
+
+#main .breadcrumbs ol li a:after {
+	content: " > ";
+}
+
+#articles {
+	overflow: scroll;   /* スクロール表示にする */ 
+	width: 780px;
+	height: 500px;
+	float: left;
+	margin-top: 5px;
+	background-color: pink;
+	margin-bottom: 10px;
+}
+
+
+
+
+#comments {
+	overflow: scroll;/*スクロール表示*/
+	width: 200px;
+	height: 500px; /*articlesと高さ同じ*/
+	float: right;
+	margin-top: 5px;
+	margin-left: 10px;
+	background-color: lightpink;
+	margin-bottom: 10px;	
+}
+
+#comments p, dt, dd {
+	font-size: 5px;
+}
+
+.ad {
+	clear: both;
+	width: 50%;
+	height: 100px;
+	margin-top: 30px;
+	background-color: green;
+	margin-bottom: 10px;		
+}
+
+#local {
+	width: 97.5%;
+	margin-top: 20px;
+	background-color: green;
+	margin-bottom: 10px;		
+}
+
+.banners {
+	width: 97.5%;
+	margin-top: 20px;
+	background-color: green;
+	margin-bottom: 10px;	
+}
+
+#footer {
+
+	width: 97.5%;
+	margin-top: 20px;
+	background-color: green;
+	margin-bottom: 10px;	
+}
+
